@@ -11,6 +11,6 @@ export class ZoneService {
   constructor(private http: HttpClient) { }
 
   fetchZones(): Observable<Zone[]> {
-    return this.http.get<Zone[]>('/zones.json');
+    return this.http.get<Zone[]>('https://uniec3.nl/uniec3-test/zones.json');
   }
 }
